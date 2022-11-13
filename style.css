@@ -13,7 +13,8 @@ body{
 header{
     background-color: #141313;
     width: 100%;
-    min-width: 70px;
+    min-height: 70px;
+    max-height:140px;
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -149,7 +150,7 @@ footer h2{
     font-weight: bolder;
 }
 /* hover effects */
-.nav-menu ul li a:hover, .nav-menu ul li a button:hover{
+.nav-menu ul li a:hover {
     background-color: #7B26D5;
     transform: translate(5px,5px);
     padding: 16px;
@@ -157,6 +158,12 @@ footer h2{
     width:max-content ;
     opacity:0.8;
     transition: all 0.3s ease;
+}
+.nav-menu ul li a button:hover{
+    padding: 0;
+}
+.nav-menu ul li a button:hover{
+    padding: 30px 69px;
 }
 .btn:hover{
     background-color:#782605;
@@ -190,11 +197,19 @@ footer h2{
     margin: auto;
 }
 h1,h3{
+    display: block;
     text-align: center;
+    margin: 0 auto;
 }
 .btn_a{
     width: fit-content;
     margin:25px auto 25px auto;
+}
+.main-img{
+    display:block;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0px;    
 }
 }
     /* mobile and tablet nav-menu */
@@ -226,7 +241,7 @@ h1,h3{
         background-color: #fff;
         display: block;
         border-radius: 10%;
-        transition: 0.7s;
+        transition: 0.5s;
     }
     .nav-menu{
         width: 100vw;
@@ -244,7 +259,7 @@ h1,h3{
         align-items: center;
         margin: auto;
         justify-content: space-between;
-        height:70vh;
+        height:50vh;
         max-width:500px;
         padding:80px 0;
         background-color: rgba(25, 20, 20, 0.9);
